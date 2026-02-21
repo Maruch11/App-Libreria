@@ -1,0 +1,7 @@
+node_modules/
+mobile/node_modules/
+.expo/
+mobile/.expo/
+dist/
+.DS_Store
+npm-debug.log*
