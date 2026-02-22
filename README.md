@@ -1,6 +1,9 @@
 # App Librería
 
-Arranque inicial del MVP móvil para gestión de libros con Expo.
+App móvil para registrar libros escaneando código de barras (ISBN/EAN).
+Permite gestionar estado de lectura y datos básicos del libro.
+
+Estado actual: MVP
 
 ## Estructura
 
@@ -10,16 +13,6 @@ Arranque inicial del MVP móvil para gestión de libros con Expo.
   - persistencia local SQLite
   - listado ordenado por título/autor
   - edición rápida de estado, avance y rating
-
-## Ejecutar
-
-```bash
-cd mobile
-npm install
-npm run start
-```
-
-Abrir en Expo Go y escanear el QR.
 
 ## Nota de arquitectura
 
