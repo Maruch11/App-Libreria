@@ -23,12 +23,6 @@ Para la demo se prioriza SQLite local (offline-first). PostgreSQL queda para sin
 
 > UI en estado MVP (funcional). Enfocada en lógica y persistencia, no en diseño visual.
 
-**Listado y gestión**
-
-**Escaneo ISBN/EAN**
-
-**Carga manual (fallback)**
-
-
-
-
+| Listado y gestión | Escaneo ISBN/EAN | Carga manual (fallback) |
+|---|---|---|
+| <img src="docs/ui-listado.jpeg" width="220"/> | <img src="docs/ui-scan.jpeg" width="220"/> | <img src="docs/ui-carga-manual.jpeg" width="220"/> |
