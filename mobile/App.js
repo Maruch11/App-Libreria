@@ -12,7 +12,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { initDb, listBooks, updateBookFields, upsertBook } from './src/db/booksDb';
+import { initDb, listBooks, updateBookFields, upsertBook, dumpBooks } from './src/db/booksDb';
 import { extractIsbn, lookupBookByIsbn } from './src/services/bookLookup';
 
 const STATUSES = ['pendiente', 'leyendo', 'terminado'];
@@ -118,6 +118,14 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       <Text style={styles.title}>App Librería · MVP</Text>
+
+      <Button
+  title="DEBUG: ver datos (SQLite)"
+  onPress={async () => {
+    await dumpBooks();
+    setMessage('Dump ejecutado. Mirá la consola de Metro.');
+  }}
+/>
 
       {canScan && (
         <View style={styles.scannerWrap}>

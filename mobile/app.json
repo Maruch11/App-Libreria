@@ -12,7 +12,12 @@
       }
     },
     "android": {
-      "permissions": ["CAMERA"]
-    }
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-sqlite"
+    ]
   }
 }

@@ -93,3 +93,17 @@ export async function updateBookFields(id, fields) {
     ]
   );
 }
+
+export async function dumpBooks() {
+  const db = await dbPromise;
+  const rows = await db.getAllAsync(`
+    SELECT
+      id, isbn, title, author, publisher, published_year,
+      reading_status, progress, rating, created_at, updated_at
+    FROM books
+    ORDER BY updated_at DESC
+  `);
+
+  console.log("BOOKS_DUMP", rows);
+  return rows;
+}
