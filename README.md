@@ -17,3 +17,18 @@ Estado actual: MVP
 ## Nota de arquitectura
 
 Para la demo se prioriza SQLite local (offline-first). PostgreSQL queda para sincronización posterior.
+
+
+### Screenshots (MVP)
+
+> UI en estado MVP (funcional). Enfocada en lógica y persistencia, no en diseño visual.
+
+**Listado y gestión**
+
+**Escaneo ISBN/EAN**
+
+**Carga manual (fallback)**
+
+
+
+
